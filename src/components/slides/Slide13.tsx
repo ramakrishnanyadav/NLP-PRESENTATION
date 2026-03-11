@@ -1,4 +1,6 @@
 import { FadeUp, StaggerContainer, StaggerItem } from "../AnimatedSection";
+import powerBiImg from "@/assets/power-bi.png";
+import tableauImg from "@/assets/tableau-dashboard.png";
 
 const features = [
   { emoji: "🤖", title: "Automated Insights", desc: "AI automatically generates charts and summaries from raw data" },
@@ -26,17 +28,17 @@ export const Slide13 = () => (
           </StaggerItem>
         ))}
       </StaggerContainer>
-      <div className="grid md:grid-cols-2 gap-5">
+      <div className="grid md:grid-cols-2 gap-5 mt-8">
         <FadeUp delay={0.3}>
-          <div className="glass-card p-5">
-            <p className="text-xs text-muted-foreground mb-2">[Placeholder: Power BI Dashboard]</p>
-            <div className="h-28 bg-primary/5 rounded-lg flex items-center justify-center text-muted-foreground text-sm">Power BI Screenshot</div>
+          <div className="glass-card-glow p-4">
+            <p className="text-xs text-muted-foreground font-heading mb-3 uppercase tracking-wider">Example: Power BI</p>
+            <img src={powerBiImg} alt="Power BI Dashboard" className="w-full h-auto rounded-lg" />
           </div>
         </FadeUp>
         <FadeUp delay={0.4}>
-          <div className="glass-card p-5">
-            <p className="text-xs text-muted-foreground mb-2">[Placeholder: Tableau Dashboard]</p>
-            <div className="h-28 bg-accent/5 rounded-lg flex items-center justify-center text-muted-foreground text-sm">Tableau Screenshot</div>
+          <div className="glass-card-glow p-4">
+            <p className="text-xs text-muted-foreground font-heading mb-3 uppercase tracking-wider">Example: Tableau</p>
+            <img src={tableauImg} alt="Tableau Dashboard" className="w-full h-auto rounded-lg" />
           </div>
         </FadeUp>
       </div>
