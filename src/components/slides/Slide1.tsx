@@ -56,7 +56,7 @@ export const Slide1 = () => {
             </p>
             <p className="text-sm text-foreground/80">
               <span className="text-muted-foreground">Subject:</span>{" "}
-              <span className="font-medium text-foreground">Artificial Intelligence</span>
+              <span className="font-medium text-foreground">Research Methodology</span>
             </p>
             <p className="text-sm text-foreground/80">
               <span className="text-muted-foreground">Instructor:</span>{" "}
