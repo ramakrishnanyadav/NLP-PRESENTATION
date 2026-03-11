@@ -66,7 +66,17 @@ export const Slide17 = () => {
             </StaggerItem>
           ))}
         </StaggerContainer>
-        <FadeUp delay={0.5}>
+        <FadeUp delay={0.4}>
+          <div className="glass-card-purple p-6 mb-12 max-w-3xl mx-auto border-l-4 border-l-primary relative overflow-hidden">
+             <div className="absolute top-0 right-0 p-4 opacity-10">
+               <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+             </div>
+             <p className="text-xl md:text-2xl font-heading font-medium text-foreground relative z-10">
+               "AI is not replacing Researchers, but <span className="glow-text-cyan font-bold italic">empowering</span> them with smarter tools."
+             </p>
+          </div>
+        </FadeUp>
+        <FadeUp delay={0.6}>
           <div className="relative inline-block">
             <h2 className="text-5xl md:text-7xl font-heading font-bold glow-text-gold mb-6">Thank You</h2>
             <motion.div
