@@ -17,7 +17,12 @@ const MiniBar = () => (
 );
 
 const MiniPie = () => (
-  <div className="w-10 h-10 rounded-full border-4 border-accent/40 border-t-accent border-r-primary mt-2 mx-auto" />
+  <div 
+    className="w-12 h-12 rounded-full mt-3 mx-auto shadow-lg shadow-accent/20"
+    style={{
+      background: "conic-gradient(hsl(192,100%,50%) 0% 60%, hsl(46,92%,53%) 60% 85%, hsl(210,40%,95%) 85% 100%)"
+    }}
+  />
 );
 
 const MiniScatter = () => (
