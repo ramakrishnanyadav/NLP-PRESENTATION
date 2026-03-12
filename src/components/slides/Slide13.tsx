@@ -30,15 +30,19 @@ export const Slide13 = () => (
       </StaggerContainer>
       <div className="grid md:grid-cols-2 gap-5 mt-8">
         <FadeUp delay={0.3}>
-          <div className="glass-card-glow p-4">
+          <div className="glass-card-glow p-4 h-full flex flex-col">
             <p className="text-xs text-muted-foreground font-heading mb-3 uppercase tracking-wider">Example: Power BI</p>
-            <img src={powerBiImg} alt="Power BI Dashboard" className="w-full h-auto rounded-lg" />
+            <div className="flex-1 w-full relative aspect-video rounded-lg overflow-hidden border border-border/50 shadow-md">
+              <img src={powerBiImg} alt="Power BI Dashboard" className="absolute inset-0 w-full h-full object-cover" />
+            </div>
           </div>
         </FadeUp>
         <FadeUp delay={0.4}>
-          <div className="glass-card-glow p-4">
+          <div className="glass-card-glow p-4 h-full flex flex-col">
             <p className="text-xs text-muted-foreground font-heading mb-3 uppercase tracking-wider">Example: Tableau</p>
-            <img src={tableauImg} alt="Tableau Dashboard" className="w-full h-auto rounded-lg" />
+            <div className="flex-1 w-full relative aspect-video rounded-lg overflow-hidden border border-border/50 shadow-md">
+              <img src={tableauImg} alt="Tableau Dashboard" className="absolute inset-0 w-full h-full object-cover" />
+            </div>
           </div>
         </FadeUp>
       </div>
